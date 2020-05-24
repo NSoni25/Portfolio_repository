@@ -56,8 +56,17 @@ The other method we have used is skew method.skew method is used to measure the 
 
 **Conclusion**
 
-In this Portfolio, we have learnt how to generate graph for a specific and also learnt some technqiues that are helpful in exploring the data set and can also help us in visualising the dataset.We have learnt about correlation and distribution of data among the variables of the dataset.The techniques and methodologies we have learnt in this portfolio will help us in prediction and modelling of data. 
+The portfolio is all about analysing the data and we have also understood which graph is used in visualising the dataset.We have seen various kinds of plot  while analysing the dataset.We have learnt about correlation and distribution of data among the variables of the dataset.The techniques and methodologies we have learnt in this portfolio will also help us in prediction and modelling of data. 
 
+Below are some key points.
+
+1.) We have seen positive correlation between various key variables in the dataset.
+
+2.) We have also seen monthly distance covered by race and ride for a given period of time.
+
+3.) We have also find out which workout_type are more popular in the dataset.
+
+4.)We have also the average of average speed. We can say that average speed is constant for races and rides in a month.
 
 Analysing COVID-19 Data
 =========================================================================
@@ -90,7 +99,11 @@ equation y = e^{mx}, we will taking log values of this equation and predicting t
 
 **Conclusion**
 
-So by using various method we have plot the data of different countries and analyze their situation in this pandemic, we are successfull in predicting the future number of cases by using linear regression model and can use this analysis to warn the country about the future increase in the number of cases.
+So by using various method we have plot the data of different countries and analyze their situation in this pandemic, we are successfull in predicting the future number of cases by using linear regression model and can use this analysis to warn the country about the future increase of this deadly virus.
+
+1.Coronavirus is deadly virus that is increases day by day, till now the only solution of this virus is social distancing as we can see from our model, the cases in China decreases when they adopt social distancing measure.
+
+2.We have also compared the cases on Country based and find out which Country has maximum number of per million cases.We have used Normalization technique and can see that US has maximum number of cases toady but they have minimum per million cases.So we can say that the country that has more population will have minimum per million cases to the country that have minimum population has maximum per million cases.
 
 Predicting the Genre of Books from Summaries
 =========================================================================
@@ -112,9 +125,13 @@ Our first task is to read the data. It is available in tab-separated format with
 
 We are building multilabel classification model to predict the genre tags from the summary field.Our First task is to clean the data and the target features by removing numerical characters and special characters from the list.After cleaning the summary data, we will remove stopwords from the summary columns and store the clean the data in a column of the genre_book dataframe.
 
-**LabelBinarizer**
+**Logistic Regression**
 
-We will start building our model by converting the genre into the features.Since we have single column data so we will use LabelBinarizer that will convert the summary genre into the features.LabelBinarizer makes our process easy by using the transform method.
+We have logistic regression technique to find out the whether genre tag is dependent on the summary of the book.We have also use this technique  as it reduces the time complexity of the model.
+
+**LabelEncoder**
+
+We will start building our model by converting the genre into the features.Since we have single column data so we will use LabelBinarizer that will convert the summary genre into the features.LabelEncoder makes our process easy by using the transform method.
 
 **tfidfVectorizer**
 
@@ -122,10 +139,7 @@ After that we will use TfidfVectorizer that computes the word counts, IDF values
 
 **Conclusion**
 
-So, we have created a model that will predict book genre from the summary feature, we have also compute accuracy score of the dataset to find out the accuracy of the model, our model can predict 52% of the genre tag on train dataset and 40% of the genre tag on test dataset.
-
-    
-
+So,In this portfolio we have created a model that will predict book genre from the summary feature, we have also compute accuracy score of the dataset to find out the accuracy of the model, our model can predict 85% of the genre tag on train dataset and 69% of the genre tag on test dataset.We have used logistic regression algorithim with OneVsRestClassifier to reduce the time compexity of the model so that it speedily predict the output.
 
 
 
